@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,22 +10,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.indigoAccent,
         body: SafeArea(
-          child: Container(
-            height: 100.0,
-            width: 100.0,
-            margin: EdgeInsets.only(left: 100.0),
-            padding: EdgeInsets.all(30.0),
-            color: Colors.white,
-            child: Text('Hello'),
+          child: Column(
+            children: <Widget>[
+              Container(
+                height: 300.0,
+                width: 300.0,
+                color: Colors.red,
+                child: Center(
+                  child: Text('KUNAL CHAUDHARY from HYDRABAD'),
+                ),
+              ),
+            ],
           ),
         ),
       ),
-
     );
   }
 }
+
 
 
 
